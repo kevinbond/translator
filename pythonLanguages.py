@@ -1,4 +1,3 @@
-
 say("Press 1 for English")
 language = ask ("Pulse dos para españos", {
   "choices": "[1 DIGITS]",
@@ -14,7 +13,7 @@ while (exit):
     if(playIntro):
       say("Welcome to English to Spanish translations!")
       playIntro=False
-    translation = ask ("For translations: press 1 for hello, press two for goodbye, press 3 for She was dead when I got here, 0 to exit", {
+    translation = ask ("For translations: press 1 for hello, press two for goodbye, press 3 for Where is the closest Taco Bell?, 0 to exit", {
         "choices" :"[1 DIGITS]", 
         "timeout": 30.0
     })
@@ -24,7 +23,7 @@ while (exit):
     elif (translation.value == '2'):
       say("despedida", {"voice": "carmen"})	 
     elif (translation.value == '3'):
-      say("Ella estaba muerta cuando llegué aquí", {"voice": "carmen"})
+      say("¿Dónde está el más cercano de Taco Bell?", {"voice": "carmen"})
     else:
       say("Thank you for using English to Spanish translation! Goodbye")
       exit = False
@@ -34,7 +33,7 @@ while (exit):
       say ("Bienvenido a Traducciones de español a Inglés!", {"voice": "carmen"})
       playIntro = False
       
-    translation = ask ("Para las traducciones: pulse 1 para saludar, pulse dos para despedirse, pulse 3 para Ella estaba muerta cuando llegué aquí, cero para salir", {
+    translation = ask ("Para las traducciones: pulse 1 para saludar, pulse dos para despedirse, pulse 3 para¿Dónde está el más cercano de Taco Bell?, cero para salir", {
       "choices" : "[1 DIGITS]",
       "voice": "carmen",
       "timeout": 30.0
@@ -45,7 +44,7 @@ while (exit):
     elif(translation.value == '2'):
       say ("Goodbye")
     elif(translation.value == '3'): 
-      say ("She was dead when I got here")
+      say ("Where is the closest Taco Bell?")
     else:
       say("Gracias por usar el español con traducción en Inglés! Adiós")
       exit = False
