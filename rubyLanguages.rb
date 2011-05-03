@@ -7,7 +7,6 @@ language = ask "Pulse dos para españos", {
 exit = true 
 playIntro = false
 while exit
-  init = init + 1
   if language.value == '1'
     if playIntro
       say "Welcome to English to Spanish translations!"
