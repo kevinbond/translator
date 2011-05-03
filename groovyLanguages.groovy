@@ -1,5 +1,3 @@
-
-
 say("Press 1 for English")
 language = ask ("Pulse dos para españos", [
   choices:"[1 DIGITS]",
@@ -19,7 +17,7 @@ while (exit)
             say("Welcome to English to Spanish translations!")
             playIntro = false
         }
-        translation = ask ("For translations: press 1 for hello, press two for goodbye, press 3 for She was dead when I got here, 0 to exit", [
+        translation = ask ("For translations: press 1 for hello, press two for goodbye, press 3 for Where is the closest Taco Bell?, 0 to exit", [
             choices:"[1 DIGITS]",
             timeout:30.0
         ])
@@ -33,7 +31,7 @@ while (exit)
         }	    
         else if(translation.value == '3')
         {
-            say ("Ella estaba muerta cuando llegué aquí", [voice: "carmen"])
+            say ("¿Dónde está el más cercano de Taco Bell?", [voice: "carmen"])
         }
         else
         {
@@ -48,7 +46,7 @@ while (exit)
             say ("Bienvenido a Traducciones de español a Inglés!", [voice: "carmen"])
             playIntro = false
         }
-        translation = ask ("Para las traducciones: pulse uno para saludar, pulse dos para despedirse, pulse tres para Ella estaba muerta cuando llegué aquí, cero para salir", [
+        translation = ask ("Para las traducciones: pulse uno para saludar, pulse dos para despedirse, pulse tres para ¿Dónde está el más cercano de Taco Bell?, cero para salir", [
             choices: "[1 DIGITS]",
             voice: "carmen",
             timeout: 30.0
@@ -63,7 +61,7 @@ while (exit)
         }
         else if(translation.value == '3')
         {
-            say ("She was dead when I got here")
+            say ("Where is the closest Taco Bell?")
         }    
         else
         { 
